@@ -48,7 +48,7 @@ func (root *TreeNode) PrintInorder() {
 	}
 }
 
-func ConstrucBSTfromSlice(nums []int) *TreeNode {
+func ConstructBSTfromSlice(nums []int) *TreeNode {
 	if len(nums) == 0 {
 		return nil
 	}

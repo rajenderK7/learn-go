@@ -92,7 +92,7 @@ func main() {
 
 	// Struct
 	nums := []int{1, 2, 3, 4, 5}
-	root := lstruct.ConstrucBSTfromSlice(nums)
+	root := lstruct.ConstructBSTfromSlice(nums)
 	root.PrintInorder()
 	fmt.Println()
 	// print(root.MorrisInorderTraversal())
