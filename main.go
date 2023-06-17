@@ -106,6 +106,10 @@ func main() {
 	// lfileio.ReadFromFile(&filename)
 
 	// Net HTTP
-	nethttp.BasicGet("3000")
-	nethttp.BasicPost("3000", "batman")
+	// nethttp.BasicGet("3000")
+	// nethttp.BasicPost("3000", "batman")
+
+	// JSON
+	nethttp.AddStudents()
+	nethttp.JsonEncode()
 }
