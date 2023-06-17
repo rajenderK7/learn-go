@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 
-	lfileio "github.com/rajenderK7/learn-go/lfileIO"
-	"github.com/rajenderK7/learn-go/lstruct"
+	nethttp "github.com/rajenderK7/learn-go/netHttp"
 )
 
 const myConst int = 69
@@ -91,18 +90,22 @@ func main() {
 	// print(slc)
 
 	// Struct
-	nums := []int{1, 2, 3, 4, 5}
-	root := lstruct.ConstructBSTfromSlice(nums)
-	root.PrintInorder()
-	fmt.Println()
+	// nums := []int{1, 2, 3, 4, 5}
+	// root := lstruct.ConstructBSTfromSlice(nums)
+	// root.PrintInorder()
+	// fmt.Println()
 	// print(root.MorrisInorderTraversal())
 
 	// File IO
-	filename := "batman.txt"
+	// filename := "batman.txt"
 	// I wantedly put the parameter as pointer to string
 	// completely unnecessary though
-	if fileCreated := lfileio.CreateCustomFile(&filename); fileCreated {
-		print("File created successfully")
-	}
-	lfileio.ReadFromFile(&filename)
+	// if fileCreated := lfileio.CreateCustomFile(&filename); fileCreated {
+	// 	print("File created successfully")
+	// }
+	// lfileio.ReadFromFile(&filename)
+
+	// Net HTTP
+	nethttp.BasicGet("3000")
+	nethttp.BasicPost("3000", "batman")
 }
