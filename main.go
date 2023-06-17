@@ -110,6 +110,8 @@ func main() {
 	// nethttp.BasicPost("3000", "batman")
 
 	// JSON
-	nethttp.AddStudents()
-	nethttp.JsonEncode()
+	// nethttp.AddStudents()
+	// nethttp.JsonEncode()
+	// nethttp.GetUserFromJsonPlaceholder()
+	nethttp.MimicJsonPlaceholder()
 }

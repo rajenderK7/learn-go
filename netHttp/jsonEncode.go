@@ -33,7 +33,7 @@ func AddStudents() {
 
 func JsonEncode() {
 	// json, err := json.Marshal(students) // Marshal will give raw json (similar to JSON.stringify)
-	json, err := json.MarshalIndent(students, "", "\t") // Second argument `prefix_string` prefix the provided character for each line of the indented JSON response
+	json, err := json.MarshalIndent(students, "", "\t") // Second argument `prefix` prefixes the provided string for each line of the indented JSON response
 	lfunc.CheckNilErr(err)
 	print(string(json))
 }
