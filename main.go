@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	nethttp "github.com/rajenderK7/learn-go/netHttp"
+	"github.com/rajenderK7/learn-go/larray"
 )
 
 const myConst int = 69
@@ -37,7 +37,12 @@ func main() {
 
 	// Array
 	// larray.BasicArrayOps()
-
+	var arr = [4]int{1, 2, 3, 4}
+	print("Original array: ", arr)
+	larray.PassingArrayAsParam(arr)
+	print("After pass-by-val and before pass-by-address arr: ", arr)
+	larray.PassingArrayAsPointer(&arr)
+	print("After pass-by-address original array: ", arr)
 	// // Slice
 	// lslice.BasicSliceOps()
 	// lslice.SliceWithInit()
@@ -113,5 +118,5 @@ func main() {
 	// nethttp.AddStudents()
 	// nethttp.JsonEncode()
 	// nethttp.GetUserFromJsonPlaceholder()
-	nethttp.MimicJsonPlaceholder()
+	// nethttp.MimicJsonPlaceholder()
 }
