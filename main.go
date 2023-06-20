@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/rajenderK7/learn-go/larray"
+	"github.com/rajenderK7/learn-go/lfunc"
 )
 
 const myConst int = 69
@@ -37,12 +37,12 @@ func main() {
 
 	// Array
 	// larray.BasicArrayOps()
-	var arr = [4]int{1, 2, 3, 4}
-	print("Original array: ", arr)
-	larray.PassingArrayAsParam(arr)
-	print("After pass-by-val and before pass-by-address arr: ", arr)
-	larray.PassingArrayAsPointer(&arr)
-	print("After pass-by-address original array: ", arr)
+	// var arr = [4]int{1, 2, 3, 4}
+	// print("Original array: ", arr)
+	// larray.PassingArrayAsParam(arr)
+	// print("After pass-by-val and before pass-by-address arr: ", arr)
+	// larray.PassingArrayAsPointer(&arr)
+	// print("After pass-by-address original array: ", arr)
 	// // Slice
 	// lslice.BasicSliceOps()
 	// lslice.SliceWithInit()
@@ -61,6 +61,8 @@ func main() {
 	// } else {
 	// 	fmt.Printf("%d is NOT a Palindrome\n", num)
 	// }
+	lfunc.GreetUser("Batman")
+	print(lfunc.FindMod10(8347))
 
 	// ---------------------- BASIC POINTERS
 	// var a int = 10

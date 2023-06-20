@@ -33,3 +33,11 @@ func Palindrome() (int, bool) {
 	}
 	return temp, rev == temp
 }
+
+var GreetUser = func(name string) {
+	fmt.Println("Hello", name)
+}
+
+var FindMod10 = func(num int) int {
+	return num % 10
+}
